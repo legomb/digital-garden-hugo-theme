@@ -3,14 +3,14 @@
 <div class="flex flex-1 h-screen relative w-full min-w-0">
 
   <section
-    class="w-full h-full md:min-w-[400px] md:w-1/4 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col py-3 overflow-y-auto scroll-area flex-shrink-0">
+    class="w-full h-full md:min-w-[400px] md:w-1/4 bg-pink-50 dark:bg-pink-800 border-r border-pink-200 dark:border-pink-700 flex flex-col py-3 overflow-y-auto scroll-area flex-shrink-0">
     <a href="{{ .Permalink }}">
       <h2 class="font-bold mb-5 py-1 pl-12 pr-3 md:px-3">{{ .Title }}</h2>
     </a>
     {{- partial "search.html" . -}}
     <div class="space-y-2.5">
       {{ range .Data.Pages -}}
-      <a class="article block px-3 py-4 hover:bg-slate-200 dark:hover:bg-slate-700" href="{{ .RelPermalink }}">
+      <a class="article block px-3 py-4 hover:bg-pink-200 dark:hover:bg-pink-700" href="{{ .RelPermalink }}">
 
         {{ $title := .Params.title }}
         {{ with .Params.images }}
@@ -19,7 +19,7 @@
         {{ end -}}
         {{ end }}
         <h3 class="text-lg font-semibold mb-0.5">{{ $title }}</h3>
-        <div class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">
+        <div class="text-sm text-pink-500 dark:text-pink-400 line-clamp-2">
           {{ .Summary }}
         </div>
       </a>
@@ -28,7 +28,7 @@
   </section>
 
   <main class="hidden md:grid h-screen place-items-center flex-1">
-    <p class="text-center p-8 text-2xl text-slate-300 dark:text-slate-700">Elegí un episodio para leer</p>
+    <p class="text-center p-8 text-2xl text-pink-300 dark:text-pink-700">Elegí un episodio para leer</p>
   </main>
 
 </div>
