@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply text-slate-900 dark:bg-slate-900 dark:text-slate-50 dark:selection:bg-slate-600;
+  @apply text-pink-600 dark:bg-pink-600 dark:text-slate-50 dark:selection:bg-pink-400;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: theme("colors.slate.400") theme("colors.slate.200");
+  scrollbar-color: theme("colors.pink.400") theme("colors.pink.200");
 }
 
 *::-webkit-scrollbar {
@@ -16,18 +16,18 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  @apply bg-slate-200;
+  @apply bg-pink-200;
 }
 *::-webkit-scrollbar-thumb {
-  @apply bg-slate-400;
+  @apply bg-pink-400;
   border-radius: 6px;
 }
 
 html.dark *::-webkit-scrollbar-track {
-  @apply bg-slate-600;
+  @apply bg-pink-600;
 }
 html.dark *::-webkit-scrollbar-thumb {
-  @apply bg-slate-400;
+  @apply bg-pink-400;
 }
 
 html.dark * {
